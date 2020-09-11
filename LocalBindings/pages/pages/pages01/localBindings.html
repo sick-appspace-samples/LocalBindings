@@ -1,0 +1,33 @@
+<layout-row id="RowLayout1">
+	<stacked-view id="StackedView1" value="first pane">
+		<stacked-pane id="StackedPane1" value="first pane">
+			<davinci-callout id="Callout1" type="info">
+		<span>This is pane 1</span>
+	</davinci-callout>
+		</stacked-pane>
+		<stacked-pane id="StackedPane2" value="second pane">
+			<davinci-callout id="Callout2" type="info">
+				<span>This is pane 2</span>
+			</davinci-callout>
+		</stacked-pane>
+		<stacked-pane id="StackedPane3" value="3. pane">
+			<davinci-callout id="Callout3" type="info">
+				<span>This is pane 3</span>
+			</davinci-callout>
+		</stacked-pane>
+		<local-binding property="value" name="selectedItem" init="first pane"></local-binding>
+	</stacked-view>
+	
+	<davinci-drop-down id="DropDown1">
+		<davinci-option id="Option1" value="first pane">
+			<span>Option 1</span>
+		</davinci-option>
+		<davinci-option id="Option2" value="second pane">
+			<span>Option two</span>
+		</davinci-option>
+		<davinci-option id="Option3" value="3. pane">
+			<span>3. Option</span>
+		</davinci-option>
+		<local-binding event="change" name="selectedItem"></local-binding>
+	</davinci-drop-down>
+</layout-row>
